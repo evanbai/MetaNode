@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"MetaNode/stage1"
+	"fmt"
+)
 
 func main() {
 
-	fmt.Println("hello")
+	fmt.Println(stage1.SingleNumber([]int{6, 1, 2, 1, 2}))
+
 }
