@@ -19,8 +19,8 @@ func Stage1Valid() {
 
 	//is valid
 	fmt.Println("----is valid----")
-	fmt.Println(IsValid2("()[]{}"))
-	fmt.Println(IsValid2("(]]"))
+	fmt.Println(IsValid1("()[]{}"))
+	fmt.Println(IsValid1("(]]"))
 	fmt.Println(IsValid2("([])"))
 	fmt.Println(IsValid2("([)]"))
 
