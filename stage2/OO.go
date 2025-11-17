@@ -34,3 +34,17 @@ func (c Circle) Perimeter() float64 {
 	fmt.Println("Calculating perimeter of circle")
 	return 2 * 3.14 * float64(c.Radius)
 }
+
+type Person struct {
+	Name string
+	Age  int
+}
+
+type Employee struct {
+	Person
+	EmployeeID string
+}
+
+func (e Employee) PrintInfo() {
+	fmt.Printf("Name: %s, Age: %d, EmployeeID: %s\n", e.Name, e.Age, e.EmployeeID)
+}
