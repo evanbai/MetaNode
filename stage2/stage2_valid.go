@@ -19,7 +19,19 @@ func Stage2Valid() {
 	//ExeGoroutine()
 
 	// multiple task schedule
-	fmt.Println("----multiple task schedule----")
-	callFunc()
+	// fmt.Println("----multiple task schedule----")
+	// callFunc()
+
+	// object oriented programming
+	fmt.Println("----object oriented programming----")
+	rect := Rectangle{Width: 10, Height: 5}
+	circle := Circle{Radius: 7}
+
+	shapes := []Shape{rect, circle}
+
+	for _, shape := range shapes {
+		fmt.Printf("Area: %f\n", shape.Area())
+		fmt.Printf("Perimeter: %f\n", shape.Perimeter())
+	}
 
 }
