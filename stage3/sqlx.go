@@ -2,11 +2,12 @@ package stage3
 
 import (
 	"fmt"
-	"github.com/jmoiron/sqlx"
 	"log"
+
+	"github.com/jmoiron/sqlx"
 )
 
-var schema = `
+var myschema = `
 CREATE TABLE employees  (
     id  		bigint unsigned auto_increment primary key,
     name 		longtext 	null,
@@ -42,7 +43,7 @@ func Run1() {
 	}
 
 	// 初始化数据
-	//db.MustExec(schema)
+	//db.MustExec(myschema)
 	//tx := db.MustBegin()
 	//tx.MustExec("INSERT INTO employees (name, department,salary) VALUES (?, ?, ?)", "张三", "技术部", "7000")
 	//tx.NamedExec("INSERT INTO employees (name, department,salary) VALUES (:name, :department, :salary)", &Employees{Name: "李四", Department: "技术部", Salary: 11000})
